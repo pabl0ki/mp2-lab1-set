@@ -92,3 +92,41 @@ int main()
 }
 
 #endif
+
+/*
+using namespace std;
+
+int main()
+{
+
+    TBitField bf(10);
+    cout << "Length = " << bf.GetLength() << endl;
+
+    bf.SetBit(0);
+    bf.SetBit(3);
+    bf.SetBit(9);
+    cout << "GetBit(0) = " << bf.GetBit(0) << endl;
+    cout << "GetBit(1) = " << bf.GetBit(1) << endl;
+    cout << "GetBit(3) = " << bf.GetBit(3) << endl;
+    cout << "GetBit(9) = " << bf.GetBit(9) << endl;
+    cout << "bf:" << bf << endl;
+
+    bf.ClrBit(3);
+    cout << "bf(3) = " << bf.GetBit(3) << endl;
+
+    TBitField copy(bf);
+    cout << "copy == bf : " << (copy == bf) << endl;
+
+    TBitField bf2(5);
+    bf2 = bf;
+    cout << "bf2 == bf : " << (bf2 == bf) << endl;
+    cout << "bf2 length = " << bf2.GetLength() << endl;
+
+    TBitField bf3(10);
+    bf3.SetBit(1);
+    cout << "bf3 != bf : " << (bf3 != bf) << endl;
+
+    cout << bf;
+    return 0;
+}
+*/
