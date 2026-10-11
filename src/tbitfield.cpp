@@ -116,7 +116,7 @@ int TBitField::operator!=(const TBitField &bf) const // сравнение
     return !(*this == bf);
 }
 
-TBitField TBitField::operator|(TBitField& bf)
+TBitField TBitField::operator|(const TBitField& bf)
 {
     int maxlen = (BitLen > bf.BitLen) ? BitLen : bf.BitLen;
     TBitField res(maxlen);
@@ -132,7 +132,7 @@ TBitField TBitField::operator|(TBitField& bf)
     return res;
 }
 
-TBitField TBitField::operator&(TBitField &bf) // операция "и"
+TBitField TBitField::operator&(const TBitField &bf) // операция "и"
 {
     int maxlen = (BitLen > bf.BitLen) ? BitLen : bf.BitLen;
     TBitField res(maxlen);
